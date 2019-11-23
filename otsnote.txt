@@ -1,0 +1,60 @@
+Alpha AXP MSCGEM OTS C run-time library notes.
+
+- The following OTS source files were obtained an eternity ago from
+  an OpenWatcom git repository (hosted by Sybase, interestingly enough).
+
+    otsdiv.asm
+    otsdivdat.asm
+
+- The following OTS source files were obtained from Kent Glossop on
+  27-Jan-1993. I believe the version number is X1.0-4.
+
+    extv.s
+    extvvol.s
+    extzv.s
+    extzvvol.s
+
+    insv.s
+    insvvol.s
+
+    ots_as.hs
+
+    scmpeql.s
+    scmpeqlp.s
+    scmpleq.s
+    scmpleqp.s
+    scmplss.s
+    scmplssp.s
+
+    sfill.s
+    sloc.s
+    smove.s
+    smovem.s
+    strans.s
+    szero.s
+
+- The six strcmp/cpy/len functions were obtained through Rich Peterson
+  on 25-Jan-1993.
+
+    strcmp.s
+    strcmp_.s
+    strcpy.s
+    strcpy_.s
+    strlen.s
+    strlen_.s
+
+- For now, and in the interest of maintenance, we have left the source
+  files intact in spite of the fact that they don't follow conventions
+  of all other NT/Alpha assembler code.
+
+- The following files had a non-ascii 0xa9 character instead of a (c)
+  in the copyright line. These have been fixed so slm works right.
+
+    scmpeql.s
+    scmpeqlp.s
+    scmpleq.s
+    scmpleqp.s
+    scmplss.s
+    scmplssp.s
+
+tvb
